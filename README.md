@@ -11,49 +11,29 @@ http://127.0.0.1:8000/auth/token/login/
 
 http://127.0.0.1:8000/auth/token/logout/
 
-create user(POST):
-http://127.0.0.1:8000/auth/users/
+User:
+  create: http://127.0.0.1:8000/auth/users/
 
-profile:
-http://127.0.0.1:8000/auth/users/me
+  profile: http://127.0.0.1:8000/auth/users/me/
 
-delete user:
-http://127.0.0.1:8000/auth/users/destroy
+  destroy: http://127.0.0.1:8000/auth/users/destroy/
 
+Package:
+  create: http://127.0.0.1:8000/package/
 
-create package(POST):
-http://127.0.0.1:8000/package/
+  detail: http://127.0.0.1:8000/package/{id}/
 
-package (GET):
-http://127.0.0.1:8000/package/{id}
+  destroy: http://127.0.0.1:8000/package/{id}/destroy
 
-delete package:
-http://127.0.0.1:8000/package/{id}/destroy
+Delivery:
+  create: http://127.0.0.1:8000/delivery
 
-
-create delivery(POST):
-http://127.0.0.1:8000/delivery
-
-delivery(GET):
-http://127.0.0.1:8000/delivery/{id}
-
-delevte delivery:
-http://127.0.0.1:8000/delivery/destroy
-
-
-create delivery detail(POST):
-http://127.0.0.1:8000/delivery_detail
-
-delivery detail(GET):
-http://127.0.0.1:8000/delivery_detail/{id}
-
-delete delivery detail:
-http://127.0.0.1:8000/delivery_detail/{id}/destroy
-
-
-
-
-
-
-
-
+  detail: http://127.0.0.1:8000/delivery/{id}/
+  destroy: http://127.0.0.1:8000/delivery/{id}/destroy
+  
+Delivery Detail:
+  create: http://127.0.0.1:8000/delivery_detail
+  
+  detail: http://127.0.0.1:8000/delivery_detail/{id}/
+  destroy: http://127.0.0.1:8000/delivery_detail{id}/destroy
+  
