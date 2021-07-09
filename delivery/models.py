@@ -10,6 +10,7 @@ class Delivery(models.Model):
     id_user_B = models.ForeignKey(User, on_delete=models.PROTECT, related_name='transport')
     id_package_1 = models.ForeignKey(User, on_delete=models.PROTECT, related_name='package_1')
     phone_receiver = models.CharField(max_length=20)
+    name_receiver = models.CharField(max_length=20)
     metro_init = models.CharField(max_length=20)
     metro_final = models.CharField(max_length=20)
     #id_package_2 = models.ForeignKey(User, on_delete=models.PROTECT, related_name='package_2', default=None)
