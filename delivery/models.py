@@ -22,6 +22,7 @@ class Delivery(models.Model):
     date_final = models.DateTimeField(null=True)
     distance = models.FloatField(null=True, max_length=50)
     payment = models.FloatField(null=True, max_length=50)
+    status = models.CharField(max_length=20, default='activo')
 
 
 class DeliveryDetail(models.Model):
