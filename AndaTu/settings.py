@@ -12,7 +12,7 @@ SECRET_KEY = 'django-insecure-*=wnx-2o)e*o6stt7on7e+%a#((4c!i-howxz@m5@_8pn$$rrc
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['grindman.pythonanywhere.com']
 
 # Application definition
 
