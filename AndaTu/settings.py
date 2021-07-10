@@ -14,6 +14,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['grindman.pythonanywhere.com']
 
+CORS_ORIGIN_ALLOW_ALL = False
+CORS_ORIGIN_WHITELIST = (
+    'grindman.pythonanywhere.com',
+)
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -30,6 +35,7 @@ INSTALLED_APPS = [
     'auth_app',
     'delivery',
     'package',
+    'corsheaders',
 
 ]
 
@@ -41,6 +47,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'AndaTu.urls'
