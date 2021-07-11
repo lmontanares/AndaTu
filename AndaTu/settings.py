@@ -14,10 +14,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['grindman.pythonanywhere.com']
 
-CORS_ORIGIN_ALLOW_ALL = False
-CORS_ORIGIN_WHITELIST = (
-    'https://grindman.pythonanywhere.com',
-)
+CORS_ORIGIN_ALLOW_ALL = True
+# CORS_ORIGIN_ALLOW_ALL = False
+# CORS_ORIGIN_WHITELIST = (
+#     'https://grindman.pythonanywhere.com',
+# )
 
 # Application definition
 
