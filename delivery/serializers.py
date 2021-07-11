@@ -12,5 +12,5 @@ class DeliveryDetailSerializer(serializers.ModelSerializer):
 class DeliverySerializer(serializers.ModelSerializer):
     class Meta:
         model = Delivery
-        fields = ['id_user_A', 'id_user_B', 'id_package_1', 'id_package_2', 'lat_initial', 'lat_final', 'lng_initial',
-                  'lng_final', 'date_initial', 'date_final', 'distance', 'total']
+        fields = ['id_user_A', 'id_user_B', 'id_package_1', 'phone_receiver', 'name_receiver', 'metro_init',
+                  'metro_final', 'date_initial', 'date_final', 'distance', 'payment', 'status']
