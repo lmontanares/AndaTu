@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 from auth_app.models import User
+from package.models import Package
 
 
 # Create your models here.
@@ -8,7 +9,7 @@ from auth_app.models import User
 class Delivery(models.Model):
     id_user_A = models.ForeignKey(User, on_delete=models.PROTECT, related_name='sender')
     id_user_B = models.ForeignKey(User, on_delete=models.PROTECT, related_name='transport', blank=True)
-    id_package_1 = models.ForeignKey(User, on_delete=models.PROTECT, related_name='package_1')
+    id_package_1 = models.ForeignKey(Package, on_delete=models.PROTECT, related_name='package_1')
     phone_receiver = models.CharField(max_length=20)
     name_receiver = models.CharField(max_length=20)
     metro_init = models.CharField(max_length=20)
