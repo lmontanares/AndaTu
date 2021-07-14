@@ -12,7 +12,8 @@ SECRET_KEY = 'django-insecure-*=wnx-2o)e*o6stt7on7e+%a#((4c!i-howxz@m5@_8pn$$rrc
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['grindman.pythonanywhere.com']
+ALLOWED_HOSTS = ['grindman.pythonanywhere.com',
+                 '127.0.0.1']
 
 CORS_ORIGIN_ALLOW_ALL = True
 # CORS_ORIGIN_ALLOW_ALL = False
