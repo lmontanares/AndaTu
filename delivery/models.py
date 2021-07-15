@@ -10,7 +10,7 @@ from package.models import Package
 class Delivery(models.Model):
     id_user_A = models.ForeignKey(User, on_delete=models.PROTECT, related_name='sender')
     id_user_B = models.ForeignKey(User, on_delete=models.PROTECT, related_name='transport', null=True, default=None)
-    id_package_1 = models.ForeignKey(Package, on_delete=models.DO_NOTHING(), related_name='package_1')
+    id_package_1 = models.ForeignKey(Package, on_delete=models.DO_NOTHING, related_name='package_1')
     phone_receiver = models.CharField(max_length=20)
     name_receiver = models.CharField(max_length=20)
     metro_init = models.CharField(max_length=20)
