@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'delivery',
     'package',
     'corsheaders',
-
 ]
 
 MIDDLEWARE = [
